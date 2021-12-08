@@ -1,0 +1,156 @@
+*{ /* Todo */
+    padding: 0; /* Se elimina espacio interior  */
+    margin: 0; /* Se elimina el espacio exterior */ 
+    /*border: solid 1px black; /* Sirve para visualizar la estructura del proyecto */
+}
+
+body{ /* Cuerpo */
+    font-family: Arial, Helvetica, sans-serif; /* Se selecciona la fuete de texto */ 
+    background-color:rgb(236, 236, 236); /* Se cambia el color del fondo */
+    font-size: 18px; /* SE ajusta el tamaño de la fuente */
+}
+
+header{ /* Cabecera */
+    background-image: url(../img/bradcam.png); /* Colocamos un fondo en css */
+    background-repeat: no-repeat; /* Asignamos propiedad para que no se repita el fondo */
+    background-size: 100% 100%; /* El tamaño del fondo será el 100% de la etiqueta header */
+    height: 100vh; /* Se redimenciona a la altura que tenga la ventana */
+    color: white;
+}
+
+#main-container header #menu{ /* Se le indica a CSS donde ubicar el elemento, NO ES OBLIGATORIO */
+    padding: 50px 0;
+
+}
+
+header #menu ul{ /* Lista del menu */
+    margin: 0;
+    padding: 0;
+}
+
+header #menu ul li{ /* opciones del menu*/
+    display: inline-block; /* Muestra los elementos en la misma linea */
+    padding: 10px;
+    vertical-align: middle; /* Alineación vertical en la mitad */
+}
+
+header #menu ul li a{ /* links del menu */
+    color: white;
+    text-decoration: none; /* Le quita el subrayado a los links */  
+    transition: 0.2s; /* transición en el hover */
+}
+
+header #menu ul li a:hover{ /* Cambio de eestulos cuando el cursor para por encima del elemento o etiqueta */
+    text-decoration: underline; /* subrayado */
+    font-size: 19px; /* Aumento de tamaño del texto */
+}
+
+header #menu ul #logo{
+    margin-right: 40%;
+    margin-left: 100px;
+
+}
+
+/* ********************************************************************** */
+
+#main-container header main{
+    /* Se modifica el elemento o la etiqueta con el id main-container*/
+    margin: 0 auto;
+    width: 1400px;  
+}
+
+#main-container header main div {
+    display: inline-block;
+    
+    vertical-align: middle;
+}
+
+#main-container header main .text h1{
+    font-size: 80px;
+}
+
+#main-container header main .text p{
+    font-size: 24px;
+    padding: 50px p;
+}
+
+#main-container header main .image{
+    text-align: center;
+}
+
+button{
+    background-color: turquoise;
+    border: 0; /* Le quita todo borde */
+    border-radius: 3px; /* Le asigna un borde redondeado */
+    color: white; /* Color de texto */
+    cursor: pointer; /* Cuando se pasa por encima el mouse cambia de puntero */
+    font-size: 24px;
+    padding: 20px 25px;
+    margin: 40px 0; /* El primer dato se refiere al margen de arriba y abajo y el segundo al margen de los lados*/
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #14929b;
+}
+
+#main-container header main .image{
+    text-align: right; /* Cambia la alineación del elemento */
+    width: 700px; /* Agrega espacio de la capa a lo ancho */
+}
+
+/* ************************************************************************** */
+
+.layout{
+    width: 1280px;
+    margin: 250px auto;
+}
+
+.layout div{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.layout h3{
+    font-size: 48px;
+    padding:  25px;
+}
+
+.layout p{
+    padding: 25px 0;
+    line-height: 32px ; /* cambia el interlineado del texto */
+}
+
+.layout-left .text{
+    width: 500px;
+
+}
+
+.layout-left .image{
+    width: 770px;
+    text-align: right;
+
+}
+
+.layout-right .text{
+    width: 500px;
+
+}
+
+.layout-right .image{
+    width: 770px;
+    text-align: center;
+
+}
+
+footer{
+    background-color: black;
+    padding: 150px 20px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.text{
+/* Se modifican los elementos o las etiquetas con la clase text */
+}
